@@ -147,6 +147,44 @@ footer{background:#0A2739;color:#8FA9BA;padding:44px 0;font-size:13.5px}
 /* ---------- multi-page additions ---------- */
 .navlinks a.on{color:var(--navy);position:relative}
 .navlinks a.on::after{content:"";position:absolute;left:0;right:0;bottom:-26px;height:3px;background:var(--teal);border-radius:2px}
+/* ---------- mobile overflow guard ---------- */
+.cgrid>*,.two>*,.herogrid>*{min-width:0}
+.ci span,.ci a{overflow-wrap:anywhere}
+/* ---------- mobile menu ---------- */
+.menubtn{display:none;width:44px;height:44px;border:1px solid var(--line);border-radius:8px;background:#fff;cursor:pointer;padding:0;margin-left:10px;flex:0 0 44px;position:relative}
+.menubtn span,.menubtn span::before,.menubtn span::after{content:"";position:absolute;left:11px;right:11px;height:2px;background:var(--navy);border-radius:2px;transition:transform .2s,opacity .2s}
+.menubtn span{top:21px}
+.menubtn span::before{left:0;right:0;top:-7px}
+.menubtn span::after{left:0;right:0;top:7px}
+header.open .menubtn span{background:transparent}
+header.open .menubtn span::before{transform:translateY(7px) rotate(45deg)}
+header.open .menubtn span::after{transform:translateY(-7px) rotate(-45deg)}
+@media(max-width:900px){
+  .menubtn{display:block}
+  .nav{gap:8px}
+  .tel{margin-left:auto}
+  .navlinks{display:none;position:absolute;top:78px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;
+            background:#fff;border-bottom:1px solid var(--line);box-shadow:0 14px 24px rgba(15,58,84,.12);padding:4px 24px 14px}
+  header.open .navlinks{display:flex}
+  .navlinks a{font-size:17px;padding:16px 0;border-bottom:1px solid var(--line)}
+  .navlinks a:last-child{border-bottom:0}
+  .navlinks a.on::after{display:none}
+  .navlinks a.on{color:var(--teal)}
+}
+@media(max-width:520px){
+  .brand svg{width:38px;height:38px}
+  .bt1,.bt2{font-size:12.5px;letter-spacing:2px}
+  .tel b{font-size:15px;white-space:nowrap}
+  .tel span{display:none}
+}
+@media(max-width:420px){
+  .brand{gap:8px}
+  .brand svg{width:34px;height:34px}
+  .bt1,.bt2{font-size:11px;letter-spacing:1.4px}
+  .tel b{font-size:13px;letter-spacing:0}
+  .menubtn{width:40px;height:40px;flex:0 0 40px;margin-left:4px}
+  .menubtn span{top:19px}
+}
 .pagehead{background:linear-gradient(160deg,#0F3A54 0%,#134860 55%,#1A5C74 100%);color:#fff;padding:60px 0 68px}
 .pagehead h1{font-size:clamp(30px,4vw,46px);margin-bottom:16px}
 .pagehead p{font-size:18px;color:#CFE0E8;max-width:40em;line-height:1.62}

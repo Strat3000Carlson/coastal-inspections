@@ -6,11 +6,22 @@
 <link rel="stylesheet" href="styles.css">
 </head><body>
 <header><div class="wrap nav">
-  <a class="brand" href="index.html"><span style="color:var(--navy)"></span>
+  <a class="brand" href="index.html"><span style="color:var(--navy)"><svg viewBox="0 0 100 100" aria-hidden="true">
+<circle cx="50" cy="50" r="47" fill="none" stroke="currentColor" stroke-width="2.5"/>
+<rect x="26" y="26" width="7.5" height="46" rx="3.2" fill="currentColor"/>
+<rect x="40" y="20" width="7.5" height="52" rx="3.2" fill="currentColor"/>
+<rect x="54" y="30" width="7.5" height="42" rx="3.2" fill="currentColor"/>
+<rect x="68" y="36" width="7.5" height="36" rx="3.2" fill="currentColor"/>
+<rect x="24" y="38" width="53" height="4.4" rx="2.2" fill="currentColor"/>
+<path d="M14 60 q9 -6 18 0 t18 0 t18 0 t18 0" fill="none" stroke="var(--wave)" stroke-width="4" stroke-linecap="round"/>
+<path d="M14 70 q9 -6 18 0 t18 0 t18 0 t18 0" fill="none" stroke="var(--wave)" stroke-width="4" stroke-linecap="round" opacity=".55"/>
+</svg></span>
 <span><span class="bt1">COASTAL</span><span class="bt2">INSPECTIONS</span></span></a>
-  <nav class="navlinks"><a href="services.html" class="on">Services</a><a href="waterfront.html">Waterfront</a><a href="about.html">About Jeff</a><a href="service-area.html">Service Area</a><a href="contact.html">Contact</a></nav>
+  <nav class="navlinks" id="mnav"><a href="services.html" class="on">Services</a><a href="waterfront.html">Waterfront</a><a href="about.html">About Jeff</a><a href="service-area.html">Service Area</a><a href="contact.html">Contact</a></nav>
   <a class="tel" href="tel:4107946092"><b>410-794-6092</b><span>Book an inspection</span></a>
+  <button class="menubtn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mnav"><span></span></button>
 </div></header>
+<script>(function(){var h=document.querySelector("header"),b=h.querySelector(".menubtn");b.addEventListener("click",function(){var o=h.classList.toggle("open");b.setAttribute("aria-expanded",o)});h.querySelectorAll(".navlinks a").forEach(function(a){a.addEventListener("click",function(){h.classList.remove("open")})})})();</script>
 <div class="pagehead"><div class="wrap">
   <div class="eyebrow">Everything else</div>
   <h1>Complete inspection services</h1>
@@ -108,7 +119,16 @@
   <small>Coastal Inspections &middot; Maryland &amp; Delaware</small>
 </div></section>
 <footer><div class="wrap fgrid">
-  <div class="fbrand"><span style="color:#fff;--wave:#8FD3DC"></span>
+  <div class="fbrand"><span style="color:#fff;--wave:#8FD3DC"><svg viewBox="0 0 100 100" aria-hidden="true">
+<circle cx="50" cy="50" r="47" fill="none" stroke="currentColor" stroke-width="2.5"/>
+<rect x="26" y="26" width="7.5" height="46" rx="3.2" fill="currentColor"/>
+<rect x="40" y="20" width="7.5" height="52" rx="3.2" fill="currentColor"/>
+<rect x="54" y="30" width="7.5" height="42" rx="3.2" fill="currentColor"/>
+<rect x="68" y="36" width="7.5" height="36" rx="3.2" fill="currentColor"/>
+<rect x="24" y="38" width="53" height="4.4" rx="2.2" fill="currentColor"/>
+<path d="M14 60 q9 -6 18 0 t18 0 t18 0 t18 0" fill="none" stroke="var(--wave)" stroke-width="4" stroke-linecap="round"/>
+<path d="M14 70 q9 -6 18 0 t18 0 t18 0 t18 0" fill="none" stroke="var(--wave)" stroke-width="4" stroke-linecap="round" opacity=".55"/>
+</svg></span>
 <span><span class="bt1">COASTAL</span><span class="bt2">INSPECTIONS</span></span></div>
   <div>Coastal Inspections LLC &middot; Maryland &amp; Delaware<br>
     MD Lic. #29830 &middot; DE Lic. #H4-0010273 &middot; <a href="terms.html" style="color:#8FA9BA">Terms</a></div>
